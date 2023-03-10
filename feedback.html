@@ -1,0 +1,84 @@
+<form id = feedbackForm action="#" onsubmit="feedbackprocess()">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="feedback.html">Feedback</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+    <header>
+      <h2>Example Responsive Form</h2>
+      <link rel="stylesheet" type="text/css" href="css/feedback.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+    </header>
+    
+    <div>
+      <label class="desc" id="title1" for="Field1">Full Name</label>
+      <div>
+        <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+      </div>
+    </div>
+      
+    <div>
+      <label class="desc" id="title3" for="Field3">
+        Email
+      </label>
+      <div>
+        <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+     </div>
+    </div>
+      
+    <div>
+      <label class="desc" id="title4" for="Field4">
+        Message
+      </label>
+    
+      <div>
+        <textarea id="Field3" name="Field3" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+      </div>
+    </div>
+      
+    <div class="star-rating">
+        <div class="thanks-msg">Thanks for your feedback !!!</div>
+        <div class="star-input">
+            <input type="radio" name="rating" id="rating-5">
+            <label for="rating-5" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-4">
+            <label for="rating-4" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-3">
+            <label for="rating-3" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-2">
+            <label for="rating-2" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-1">
+            <label for="rating-1" class="fas fa-star"></label>
+        </div>
+    </div>
+    
+    <div>
+          <div>
+            <input id="saveForm" name="saveForm" type="submit" value="Submit">
+        </div>
+    </div>
+    
+  </form>
+  <script>
+    function feedbackprocess(){
+        var form = document.getElementById("feedbackForm");
+        var name = form.Field1.value;
+        var email = form.Field2.value;
+        var message = form.Field3.value;
+        alert("User name correct?");
+        alert(name)
+    }
+
+  </script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Ryan's Website</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="second.html">Page 2</a>
+  <a href="feedback.html">Feedback</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">TBA</a>
+      <a href="#">TBA</a>
+      <a href="#">TBA</a>
+    </div>
+  </div>
+  <a href="#about">TBA</a>
+</div>
+  <body>
+    <div class="flex_container">
+      <div class="flex_item">
+        <h3>Welcome to Ryan's Website</h3>
+        <table>
+          <!--#include virtual="second.html"-->
+          <tr>
+            <td colspan="3">
+              <p class="italicline">This is a practice website I am creating for CSCE-464.</p>
+            </td>
+            <td colspan="2">
+              <img src="images/steelers.jpg" alt="Steelers" width="256" height="256">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button onclick="myFunction()" id="toggle"> Dark Mode</button>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode")
+      if(element.classList.contains("dark-mode")){
+        document.getElementById('toggle').innerHTML = "Light Mode"
+      }
+      else {
+        document.getElementById('toggle').innerHTML = "Dark Mode"
+      }
+    }
+  </script>
+</body>
+</html>
