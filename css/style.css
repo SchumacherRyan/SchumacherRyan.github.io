@@ -17,7 +17,7 @@ header {
 .dark-mode,
 .dark-mode .page {
     background-color: black;
-    color: white
+    color: white;
 }
 
 p.italicline{
