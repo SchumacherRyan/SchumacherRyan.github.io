@@ -1,4 +1,6 @@
-<form id = feedbackForm action="#" onsubmit="feedbackprocess()">
+<!DOCTYPE html>
+<html>
+
   <head>
     <link rel="stylesheet" type="text/css" href="css/feedback.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
@@ -43,16 +45,16 @@
     </div>
       
     <div>
-      <label class="desc" id="title3" for="Field3">
+      <label class="desc" id="title2" for="Field2">
         Email
       </label>
       <div>
-        <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+        <input id="Field2" name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
      </div>
     </div>
       
     <div>
-      <label class="desc" id="title4" for="Field4">
+      <label class="desc" id="title3" for="Field3">
         Message
       </label>
     
@@ -62,7 +64,6 @@
     </div>
       
     <div class="star-rating">
-        <div class="thanks-msg">Thanks for your feedback !!!</div>
         <div class="star-input">
             <input type="radio" name="rating" id="rating-5">
             <label for="rating-5" class="fas fa-star"></label>
@@ -78,20 +79,19 @@
     </div>
     
     <div>
-          <div>
-            <input id="saveForm" name="saveForm" type="submit" value="Submit">
-        </div>
+      <button onclick="feedbackProcess()">Submit</button>
     </div>
-    
-  </form>
-  <script>
-    function feedbackprocess(){
-        var form = document.getElementById("feedbackForm");
-        var name = form.Field1.value;
-        var email = form.Field2.value;
-        var message = form.Field3.value;
-        alert("User name correct?");
-        alert(name)
-    }
 
-  </script>
+    <script>
+      function feedbackProcess() {
+          var name = Field1.value;
+          var email = Field2.value;
+          var message = Field3.value;
+          alert("Thanks for your feedback " + name + ", we hope you enjoyed the site.")
+      }
+  
+    </script>
+
+</html>
+    
+  
