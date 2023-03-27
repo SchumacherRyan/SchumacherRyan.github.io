@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ryan's Rankings</title>
+  <link rel="stylesheet" type="text/css" href="css/rankings.css">
+</head>
+
+<header>
+  <h1>Ryan's Rankings</h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="rankingbuilder.html">Build Your Own</a>
+  <div class="dropdown">
+    <button class="dropbtn">Rankings
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="fastfood.html">Fast Food Chains</a>
+      <a href="#">UNL Majors</a>
+      <a href="#">Breakfast Foods</a>
+      <a href="#">Drinks</a>
+      <a href="#">Colors</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">Bands</a>
+      <a href="#">NFL Players</a>
+      <a href="#">NBA Players</a> 
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+  <a onclick="myFunction()" id="toggle"> Dark Mode</a>
+</div>
+
+<body>
+    <h2>Ranking Builder</h2>
+  
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+    if(element.classList.contains("dark-mode")){
+      document.getElementById('toggle').innerHTML = "Light Mode"
+    }
+    else {
+      document.getElementById('toggle').innerHTML = "Dark Mode"
+    }
+  }
+  </script>
+</body>
+
+</html>

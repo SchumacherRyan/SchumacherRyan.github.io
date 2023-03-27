@@ -1,5 +1,5 @@
 *{
-    font-family: "Trebuchet MS"
+    font-family: "Trebuchet MS";
 }
 
 .page {
@@ -34,6 +34,15 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+
+td:first-of-type {
+    width: 30px;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: white;
+    color: darkslategray;
+    font-weight:bolder;
 }
 
 tr {

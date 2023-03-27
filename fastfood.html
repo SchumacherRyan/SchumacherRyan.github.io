@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ryan's Rankings</title>
+  <link rel="stylesheet" type="text/css" href="css/rankings.css">
+</head>
+
+<header>
+  <h1>Ryan's Rankings</h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="big_board.html">Big Board</a>
+  <div class="dropdown">
+    <button class="dropbtn">Rankings
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="fastfood.html">Fast Food Chains</a>
+      <a href="#">UNL Majors</a>
+      <a href="#">Breakfast Foods</a>
+      <a href="#">Drinks</a>
+      <a href="#">Colors</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">Bands</a>
+      <a href="#">NFL Players</a>
+      <a href="#">NBA Players</a> 
+    </div>
+  </div>
+  <a href="feedback.html">Feedback</a>
+  <a onclick="myFunction()" id="toggle"> Dark Mode</a>
+</div>
+
+<body>
+    <h2>Top 10 Fast Food Chains</h2>
+
+    <table>
+        <tr>
+            <th>RANK</th>
+            <th>CHAIN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Raisin Cane's</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Runza</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Panda Express</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Taco Bell</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Freddy's</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>McDonald's</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Wendy's</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Chik-fil-A</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Hardee's</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Slim Chicken's</td>
+        </tr>
+    </table>
+  
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+    if(element.classList.contains("dark-mode")){
+      document.getElementById('toggle').innerHTML = "Light Mode"
+    }
+    else {
+      document.getElementById('toggle').innerHTML = "Dark Mode"
+    }
+  }
+  </script>
+</body>
+
+</html>
